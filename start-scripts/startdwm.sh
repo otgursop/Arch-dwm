@@ -1,13 +1,13 @@
 #!/bin/sh
 
-setxkbmap us,ru -option 'grp:alt_shift_toggle'
+setxkbmap us,ru -option 'grp:alt_shift_toggle' &
 
-exec feh --bg-scale ~/Pictures/Wallpapers/wallpaper9.jpg &
+feh --bg-scale ~/Pictures/Wallpapers/wallpaper9.jpg &
 
-exec flameshot &
-exec nm-applet &
+flameshot &
+nm-applet &
 
-exec /usr/local/bin/notify-18-00.out &
+/usr/local/bin/notify-18-00.out &
 
 dunst &
 dwmblocks &
