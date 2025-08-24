@@ -2,18 +2,16 @@
 
 setxkbmap us,ru -option 'grp:alt_shift_toggle'
 
-#dunst -config ~/.config/dunst/dunstrc
-#picom --config ~/.config/picom/picom.conf
+exec feh --bg-scale ~/Pictures/Wallpapers/wallpaper9.jpg &
 
 exec flameshot &
 exec nm-applet &
 
+exec /usr/local/bin/notify-18-00.out &
+
+dunst &
+dwmblocks &
+
 while true; do
-    feh --bg-scale ~/Pictures/Wallpapers/wallpaper7_darker.jpg
-
-    dunst &
-    dwmblocks &
-
     dwm 2> ~/.dwm.log
-
 done
